@@ -4,7 +4,7 @@ def bytes_E21080(byte_array, buf, a3, len_buf):
         a5 += chr(ord(buf[i % len_buf]) ^ byte_array[i])
     return a5
 
-
+#https://gist.github.com/1259iknowthat/8cb818f0a37566b1fc25151ef074d9af
 # buf = "RegSetValue"
 # byte_E24038 = b'\x11_;\x03\x17\x1b1\x13\r\x18!3\x11\x06\x0f(\x1d5\x13\x03\x06\n4\x11;\x04\x0c\x1a2\x0e\x1b\x069\x01\x11\x06!\x11T\x1b\x04\x02\x009\x02\x17\x084\x17\x15;\x120&\x113\x17\x13\x06\x15(\x03\x0f\x05\x1e\x00++3}\t\x1a=\x00\x00\x00'
 # print(bytes_E21080(byte_E24038, buf, 73, len(buf)))
